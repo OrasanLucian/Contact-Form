@@ -3,10 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Magazin electronic</title>
+    <title>Contact Form DOM</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <div id="request">
+      <i class="fa-solid fa-octagon-check" style="color: #008000"></i>
+    </div>
+    <div id="container">
+      <div id="container1">
+        <input type="text" id="first-name" placeholder="First name" />
+        <input type="text" id="last-name" placeholder="Last name" />
+
+        <div id="radio">
+          <p>Gender:</p>
+          <input type="radio" id="male" name="gender" />
+          <label for="male">M</label>
+          <br />
+          <input type="radio" id="female" name="gender" />
+          <label for="female">F</label>
+        </div>
+
+        <div class="message">
+          <textarea
+            name="your-message"
+            id="your-message"
+            cols="52"
+            rows="10"
+            placeholder="Your message here..."
+          ></textarea>
+        </div>
+
+        <button id="buton">Submit</button>
+      </div>
+
+      <div id="container2">
+        <img
+          src="https://img.freepik.com/free-icon/user_318-159711.jpg"
+          alt="profil"
+        />
+      </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
